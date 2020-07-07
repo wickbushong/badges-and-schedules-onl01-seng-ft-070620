@@ -14,7 +14,8 @@ end
 def assign_rooms(array)
   ans = []
   array.each {|person, i|
-    ans << "Hello, #{person}! You'll be assigned to room #{(i % 7) + 1}!"
+    room = (i % 7) + 1
+    ans << "Hello, #{person}! You'll be assigned to room #{room}!"
   }
   ans
 end
